@@ -1,12 +1,17 @@
 # Write a program to find the factorial of a number using functions.
-echo "Enter the number: "
-read num                     
-
-f=1                    
-
-for((i=2;i<=num;i++))
+factorial()
 {
-  f=$((f * i)) 
+if [ "$1" -gt "1" ] 
+then
+ a=`expr $1 - 1`
+ b=`factorial $a`
+ c=`expr $1 \* $b`
+ echo $c
+else
+ echo 1
+fi
 }
 
-echo $f
+echo "Enter a number:"
+read num
+factorial $num
