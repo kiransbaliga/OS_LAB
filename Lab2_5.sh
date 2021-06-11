@@ -1,15 +1,16 @@
-no=1
-col=0
-
-while [ $col -lt 4 ]
-do
-    row=0
-    while [ $row -lt `expr $col + 1` ]
-    do   
-        echo -n "$no "
-        no=`expr $no + 1`
-        row=`expr $row + 1`
-    done
-    echo ""
-    col= `expr $col + 1`
-done
+function floyd_triangle(){
+# echo "Enter a number"
+# read num
+num=4
+n=1
+echo "floyd triangle"
+for((i=1;i<=num;i++))
+{
+  for((j=1;j<=$i;j++)){
+      echo -n "$n "
+      n=$((n+1))
+  }
+  echo ""
+}
+}
+floyd_triangle
