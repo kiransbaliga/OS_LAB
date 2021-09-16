@@ -7,8 +7,7 @@ struct process{
 
 void displayProcesses(struct process pros[],int n)
 {
-        printf("PROCESSE12
-        S:\n");
+        printf("PROCESSE12S:\n");
         printf("ProcessID\tBurst Time\tArrival Time\n");
         for(int i=0;i<n;i++)
         {
