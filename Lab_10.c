@@ -195,7 +195,6 @@ int main()
 {
     int rfl, f;
     struct SimpleArray rf;
-    printf("\nPAGE REPLACEMENT ALGORITHMS\n\n");
     printf("Input the Length of Reference String\n");
     scanf("%i", &rfl);
     printf("Enter the Reference String...\n");
